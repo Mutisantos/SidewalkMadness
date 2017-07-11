@@ -1,0 +1,1611 @@
+fileFormatVersion: 2
+guid: 1d4ef21fab7766c4b8edfbb2e71bcc22
+timeCreated: 1497109902
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ninja_0
+    21300002: ninja_1
+    21300004: ninja_2
+    21300006: ninja_3
+    21300008: ninja_4
+    21300010: ninja_5
+    21300012: ninja_6
+    21300014: ninja_7
+    21300016: ninja_8
+    21300018: ninja_9
+    21300020: ninja_10
+    21300022: ninja_11
+    21300024: ninja_12
+    21300026: ninja_13
+    21300028: ninja_14
+    21300030: ninja_15
+    21300032: ninja_16
+    21300034: ninja_17
+    21300036: ninja_18
+    21300038: ninja_19
+    21300040: ninja_20
+    21300042: ninja_21
+    21300044: ninja_22
+    21300046: ninja_23
+    21300048: ninja_24
+    21300050: ninja_25
+    21300052: ninja_26
+    21300054: ninja_27
+    21300056: ninja_28
+    21300058: ninja_29
+    21300060: ninja_30
+    21300062: ninja_31
+    21300064: ninja_32
+    21300066: ninja_33
+    21300068: ninja_34
+    21300070: ninja_35
+    21300072: ninja_36
+    21300074: ninja_37
+    21300076: ninja_38
+    21300078: ninja_39
+    21300080: ninja_40
+    21300082: ninja_41
+    21300084: ninja_42
+    21300086: ninja_43
+    21300088: ninja_44
+    21300090: ninja_45
+    21300092: ninja_46
+    21300094: ninja_47
+    21300096: ninja_48
+    21300098: ninja_49
+    21300100: ninja_50
+    21300102: ninja_51
+    21300104: ninja_52
+    21300106: ninja_53
+    21300108: ninja_54
+    21300110: ninja_55
+    21300112: ninja_56
+    21300114: ninja_57
+    21300116: ninja_58
+    21300118: ninja_59
+    21300120: ninja_60
+    21300122: ninja_61
+    21300124: ninja_62
+    21300126: ninja_63
+    21300128: ninja_64
+    21300130: ninja_65
+    21300132: ninja_66
+    21300134: ninja_67
+    21300136: ninja_68
+    21300138: ninja_69
+    21300140: ninja_71
+    21300142: ninja_72
+    21300144: ninja_73
+    21300146: ninja_74
+    21300148: ninja_75
+    21300150: ninja_76
+    21300152: ninja_77
+    21300154: ninja_78
+    21300156: ninja_79
+    21300158: ninja_80
+    21300160: ninja_81
+    21300162: ninja_82
+    21300164: ninja_83
+    21300166: ninja_84
+    21300168: ninja_85
+    21300170: ninja_86
+    21300172: ninja_87
+    21300174: ninja_88
+    21300176: ninja_89
+    21300178: ninja_90
+    21300180: ninja_91
+    21300182: ninja_92
+    21300184: ninja_93
+    21300186: ninja_94
+    21300188: ninja_96
+    21300190: ninja_97
+    21300192: ninja_98
+    21300194: ninja_99
+    21300196: ninja_100
+    21300198: ninja_101
+    21300200: ninja_102
+    21300202: ninja_103
+    21300204: ninja_104
+    21300206: ninja_106
+    21300208: ninja_107
+    21300210: ninja_108
+    21300212: ninja_109
+    21300214: ninja_110
+    21300216: ninja_111
+    21300218: ninja_112
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ninja_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2292
+        width: 129
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2292
+        width: 131
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_2
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 2295
+        width: 67
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_3
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 2288
+        width: 97
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_4
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 2273
+        width: 131
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_5
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 2281
+        width: 142
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_6
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 2282
+        width: 83
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_7
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 2279
+        width: 105
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_8
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 2103
+        width: 100
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2105
+        width: 93
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_10
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 2106
+        width: 97
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_11
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 2100
+        width: 123
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_12
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 2086
+        width: 95
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_13
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 2094
+        width: 87
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_14
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 2094
+        width: 128
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_15
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 2093
+        width: 91
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_16
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 2096
+        width: 87
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1909
+        width: 148
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1909
+        width: 144
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_19
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1909
+        width: 100
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_20
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1885
+        width: 122
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_21
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1895
+        width: 141
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_22
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1898
+        width: 131
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_23
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1898
+        width: 108
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_24
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1904
+        width: 119
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_25
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1734
+        width: 85
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_26
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1697
+        width: 90
+        height: 130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_27
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1714
+        width: 119
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_28
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1691
+        width: 125
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_29
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1708
+        width: 126
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_30
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1700
+        width: 101
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_31
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1697
+        width: 96
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_32
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 1701
+        width: 94
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_33
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 1700
+        width: 98
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_34
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 1702
+        width: 115
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_35
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1536
+        width: 170
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_36
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1524
+        width: 145
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_37
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1528
+        width: 70
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_38
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1533
+        width: 74
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_39
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1528
+        width: 120
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_40
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1524
+        width: 154
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_41
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1530
+        width: 143
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_42
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1530
+        width: 73
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_43
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 1530
+        width: 82
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_44
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1350
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_45
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1300
+        width: 90
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_46
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1304
+        width: 140
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_47
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1301
+        width: 176
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_48
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1255
+        width: 84
+        height: 169
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_49
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1268
+        width: 62
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_50
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 1344
+        width: 66
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_51
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1286
+        width: 78
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_52
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 1280
+        width: 112
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_53
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1284
+        width: 102
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_54
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1108
+        width: 102
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_55
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1116
+        width: 122
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_56
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1089
+        width: 111
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_57
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1056
+        width: 92
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_58
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 1045
+        width: 111
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_59
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1053
+        width: 112
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_60
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 1061
+        width: 107
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_61
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1053
+        width: 77
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_62
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 1060
+        width: 148
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_63
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 975
+        width: 122
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_64
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 964
+        width: 152
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_65
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 939
+        width: 150
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_66
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 924
+        width: 169
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_67
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 908
+        width: 151
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_68
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 907
+        width: 170
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_69
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 880
+        width: 74
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_71
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 745
+        width: 83
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_72
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 737
+        width: 63
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_73
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 718
+        width: 67
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_74
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 701
+        width: 48
+        height: 156
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_75
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 752
+        width: 59
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_76
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 703
+        width: 59
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_77
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 687
+        width: 44
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_78
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 699
+        width: 72
+        height: 181
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_79
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 687
+        width: 64
+        height: 175
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_80
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 727
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_81
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 699
+        width: 96
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_82
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 750
+        width: 139
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_83
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 716
+        width: 96
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_85
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 531
+        width: 77
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_86
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 527
+        width: 46
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_87
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 527
+        width: 74
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_88
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 493
+        width: 98
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_89
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 488
+        width: 108
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_90
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 497
+        width: 155
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_91
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 487
+        width: 135
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_92
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 485
+        width: 115
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_93
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 479
+        width: 93
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_94
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 469
+        width: 111
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_96
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 306
+        width: 69
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_97
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 308
+        width: 117
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_98
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 329
+        width: 166
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_99
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 335
+        width: 80
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_100
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 319
+        width: 105
+        height: 129
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_101
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 322
+        width: 162
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_102
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 319
+        width: 118
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_103
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 319
+        width: 84
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_104
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 322
+        width: 132
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_106
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 88
+        width: 133
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_107
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 100
+        width: 107
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_108
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 110
+        width: 115
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_109
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 65
+        width: 86
+        height: 155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_110
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 64
+        width: 164
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_111
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 62
+        width: 105
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ninja_112
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 62
+        width: 121
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
