@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnemyPatrolMove : MonoBehaviour
 {
-
+	public GameObject pointsContainer;
 	//Puntos de recorrido de patrulla
-	public Transform[] waypoints;
+	[SerializeField]
+	private List<Transform> waypoints;
 	//Velocidad de movimiento del enemigo
 	public float step = 0.01f;
 	//Multiplicador de velocidad cuando inicia la persecusión
@@ -27,9 +28,8 @@ public class EnemyPatrolMove : MonoBehaviour
 	//Collider
 	private Rigidbody2D myBody;
 
-	//Indice del waypoint
-	[SerializeField]
-	private int targetPoint = 0;
+	//Indice del waypoint - configurable para editar los puntos objetivos
+	public int targetPoint = 0;
 	//Posicion Actual
 	private Vector2 actualPosition;
 	//Posicion del waypoint siguiente
@@ -65,6 +65,13 @@ public class EnemyPatrolMove : MonoBehaviour
 		anim.SetBool ("Idle", true);
 		animSpeed = anim.GetFloat("Speed");
 		counted = false;
+		if (pointsContainer != null) {
+			Transform[] points = pointsContainer.GetComponentsInChildren<Transform> ();
+			waypoints.Clear ();
+			for (int i = 1; i < points.Length; i++) {
+				waypoints.Add(points[i]);
+			}
+		}
 
 	}
 	
@@ -89,7 +96,7 @@ public class EnemyPatrolMove : MonoBehaviour
 		if (Vector2.Distance (this.actualPosition, this.nextPosition) > this.maxDistance) {
 			myBody.MovePosition (Vector2.MoveTowards (this.actualPosition, this.nextPosition, step));
 		} else {
-			if (targetPoint >= waypoints.Length - 1) {
+			if (targetPoint >= waypoints.Count - 1) {
 				targetPoint = 0;
 			} else {
 				targetPoint++;
