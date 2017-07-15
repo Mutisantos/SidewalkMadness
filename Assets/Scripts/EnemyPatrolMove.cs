@@ -62,7 +62,6 @@ public class EnemyPatrolMove : MonoBehaviour
 		nextPosition = new Vector2 (0f, 0f);
 		speed = step;
 		inPursuit = false;
-		anim.SetBool ("Idle", true);
 		animSpeed = anim.GetFloat("Speed");
 		counted = false;
 		if (pointsContainer != null) {
