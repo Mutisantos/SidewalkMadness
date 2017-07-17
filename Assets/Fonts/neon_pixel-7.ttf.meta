@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f1c6b32ca90f75b4fb23816ab6d639a7
+timeCreated: 1500233650
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Neon Pixel-7
+  fontNames:
+  - Neon Pixel-7
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
