@@ -105,7 +105,6 @@ public class PlayerController : MonoBehaviour {
 
 
 		if (l != 0 || h != 0) {
-			print (velocity);
 			mybody.MovePosition (new Vector2 (movement.x, movement.y));
 			if (moveSound) {
 				SoundManager.instance.RandomizePlayerFx (this.walk1, this.walk2);
