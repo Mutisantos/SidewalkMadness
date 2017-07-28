@@ -51,23 +51,20 @@ public class SceneLoader : MonoBehaviour {
 		AsyncOperation op = SceneManager.LoadSceneAsync(index);
 		op.allowSceneActivation = false;
 		while (!op.isDone) {
-			float progress = Mathf.Clamp01 (op.progress / 0.9f);//0.9 por el inicio de carga de escena
+			//float progress = Mathf.Clamp01 (op.progress / 0.9f);//0.9 por el inicio de carga de escena
 			if (isLoadingScene) {
-				slider.value = progress; //si hay cargas pesadas
-				//yield return new WaitForSeconds (0.1f);
-				//slider.value = 0.3f;
-				//yield return new WaitForSeconds (0.1f);
-				//slider.value = 0.6f;
-				//yield return new WaitForSeconds (0.1f);
-				//slider.value = 0.9f;
-				//yield return new WaitForSeconds (0.1f);
-				//slider.value = 1f;
-			}
-			if (op.progress == 0.9f) {
+				//slider.value = progress; //si hay cargas pesadas
+				yield return new WaitForSeconds (0.1f);
+				slider.value = 0.25f;
+				yield return new WaitForSeconds (0.1f);
+				slider.value = 0.5f;
+				yield return new WaitForSeconds (0.1f);
+				slider.value = 0.75f;
+				yield return new WaitForSeconds (0.1f);
+				slider.value = 1f;
 				op.allowSceneActivation = true;
-				slider.value = 1.0f;
-				yield return new WaitForSeconds (0.01f);
 			}
+			yield return new WaitForSeconds (0.01f);
 		}
 	}
 }

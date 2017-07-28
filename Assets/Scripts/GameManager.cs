@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour {
 	private bool alive = false;
 	//Modo de juego de contrarreloj, el checkpoint solo aplica cuando survivalMode es falso
 	public bool survivalMode = true;
+	//Dejar al jugador inmune en los checkpoints
+	[SerializeField]
+	private bool onCheckpoint = false;
 	[SerializeField]
 	private Vector2 respawnPoint;
 	[SerializeField]
@@ -83,6 +86,14 @@ public class GameManager : MonoBehaviour {
 
 	public void setSurvivalMode(bool survivalMode){
 		this.survivalMode = survivalMode;
+	}
+
+	public bool isOnCheckpoint(){
+		return this.onCheckpoint;
+	}
+
+	public void setOnCheckpoint(bool onCheckpoint){
+		this.onCheckpoint = onCheckpoint;
 	}
 
 	public Vector2 getRespawnPoint(){

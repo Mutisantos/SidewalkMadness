@@ -164,22 +164,15 @@ public class EnemyPatrolMove : MonoBehaviour
 	//Solo alertar al jugador recien el enemigo puede verme
 	void OnTriggerEnter2D (Collider2D coll)
 	{
-		if (coll.tag == "Player" && !GameManager.instance.isEnded ()) {
+		if (coll.tag == "Player" && !GameManager.instance.isEnded () && !GameManager.instance.isOnCheckpoint()) {
 			SoundManager.instance.RandomizeFx (detectionFX);
-		}
-	}
-
-
-	/**Metodo para usar el Trigger de vision del personaje para perseguirlo mientras pueda verlo*/
-	void OnTriggerStay2D (Collider2D coll)
-	{
-		if (coll.tag == "Player") {
 			inPursuit = true;
 			step = pursuitMultiplier * speed;
 			Rigidbody2D player = coll.attachedRigidbody;
 			nextPosition = player.position;
 		}
 	}
+
 
 	/**Metodo para usar el Trigger cuando el personaje salga del rango de vision*/
 	void OnTriggerExit2D (Collider2D coll)

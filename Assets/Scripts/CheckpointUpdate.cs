@@ -22,7 +22,17 @@ public class CheckpointUpdate : MonoBehaviour {
 		if (coll.tag == "Player" && !GameManager.instance.isEnded () && !GameManager.instance.isSurvivalMode()) {
 			GameManager.instance.setRespawnPoint (transform.position);
 			GameManager.instance.setlastCheckpoint (this);
+			GameManager.instance.setOnCheckpoint (true);
 			anim.SetBool ("checked",true);
+		}
+	}
+
+
+	void OnTriggerExit2D(Collider2D coll)
+	{
+		if (coll.tag == "Player" && !GameManager.instance.isEnded () && !GameManager.instance.isSurvivalMode()) {
+			GameManager.instance.setOnCheckpoint (false);
+			anim.SetBool ("checked",false);
 		}
 	}
 

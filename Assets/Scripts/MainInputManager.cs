@@ -39,7 +39,7 @@ namespace MainInput{
 
 		public bool playable;
 		public bool pc; // Plataforma PC
-		public float touchThreshold = 0.02f;
+
 
 		void Update () {
 			if (playable && pc) {//Inputs de teclado
