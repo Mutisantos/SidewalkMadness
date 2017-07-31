@@ -89,6 +89,9 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public bool isOnCheckpoint(){
+		if (survivalMode) {
+			return false;
+		}
 		return this.onCheckpoint;
 	}
 
