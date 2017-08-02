@@ -79,13 +79,18 @@ public class EnemyPatrolMove : MonoBehaviour
 	{
 		if (!GameManager.instance.isEnded ()) {//Los enemigos no pueden seguir persiguiendo si el juego se termina
 			movePosition ();
+		}
+	}
+
+	void Update (){
+		if (!GameManager.instance.isEnded ()) {//Los enemigos no pueden seguir persiguiendo si el juego se termina
 			changeDirection ();
 		}
 	}
 
 
-
 	/**Metodo que mueve el enemigo hacia una posicion determinada por sus waypoints o el enemigo*/
+
 	public void movePosition ()
 	{
 		actualPosition = myBody.position;
@@ -109,7 +114,6 @@ public class EnemyPatrolMove : MonoBehaviour
 	/**Metodo que cambia la direccion a la que mira el enemigo segun el punto que tenga de objetivo para moverse*/
 	public void changeDirection(){
 		/*Establecer la dirección de vision y del sprite*/
-		anim.SetFloat ("Speed", animSpeed);
 		Vector3 temp = enemyRange.transform.rotation.eulerAngles;
 		float deltaX = actualPosition.x - nextPosition.x;
 		float deltaY = actualPosition.y - nextPosition.y;
@@ -152,7 +156,7 @@ public class EnemyPatrolMove : MonoBehaviour
 		if(direction != anim.GetInteger("Direction")){
 			anim.SetBool ("Idle", false);
 			anim.SetInteger ("Direction", direction);
-			anim.SetFloat ("Speed", animSpeed * 20);
+			anim.SetFloat ("Speed", animSpeed);
 		}
 			
 	
