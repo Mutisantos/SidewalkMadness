@@ -7,12 +7,14 @@ public class Building : MonoBehaviour{
 	//Dimensiones del edificio
 	public int height;
 	public int width;
+	public bool isRoad;
 
-	public Building(int x,int y,int h,int w){
-		this.x = x;
-		this.y = y;
-		this.height = h;
-		this.width = w;
+	void Start(){
+	//	setBuildingPosition();
+	}
+
+	public void setBuildingPosition(){
+		transform.position = new Vector3(x,y,0);
 	}
 
 	public int getX(){
