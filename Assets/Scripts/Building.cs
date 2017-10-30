@@ -30,5 +30,12 @@ public class Building : MonoBehaviour{
 		return width;
 	}
 
+	public bool isVertical(){
+		if(height > width)
+			return true;
+		else
+			return false;
+	}
+
 
 }
