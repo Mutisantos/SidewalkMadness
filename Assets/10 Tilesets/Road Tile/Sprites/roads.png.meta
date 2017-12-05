@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e10f947be2bea7448b7f050392a49bfd
-timeCreated: 1512339960
+timeCreated: 1512432358
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,6 +28,7 @@ TextureImporter:
     21300042: roads_7
     21300044: roads_8
     21300046: roads_9
+    21300048: roads_10
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -304,6 +305,20 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: roads_10
+      rect:
+        serializedVersion: 2
+        x: 32
         y: 16
         width: 16
         height: 16

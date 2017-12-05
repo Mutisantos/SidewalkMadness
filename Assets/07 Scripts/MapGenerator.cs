@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public enum orientation{HORIZONTAL, VERTICAL}
 public struct Area{
@@ -28,24 +29,20 @@ public struct Area{
 
 public class MapGenerator : MonoBehaviour {
 
-	public Building[] buildings;
+	public Tilemap map;
 
-	public Building initialBuilding;
-	public Building targetBuilding;
-	public Building vroad;
-	public Building hroad;
-	
+	public TileBase roadTile;
 	public int height;
 	public int width;
 	public int mainStreetDepth;
+
+	public int minAreaSize;
 	public int randomRange;	
 	public bool finishedLoading;
 
 	public bool initHorizontal;
 	public int mapRate;
 	private int direction; //Par:Horizontal; Impar:Vertical
-	//Building Side Size -> Building 
-	private Dictionary<int, ArrayList> buildMap = new Dictionary<int, ArrayList>();
 
 	void Start () {
 		direction = 0;
@@ -53,12 +50,6 @@ public class MapGenerator : MonoBehaviour {
 		this.generateMap();
 	}
 	
-	private void orderBuildings(){
-		foreach (Building b in buildings){
-			
-		}
-	}
-
 	private void generateMap(){
 		Queue<Area> regiones = new Queue<Area>();
 		Queue<Area> calles = new Queue<Area>();
@@ -78,71 +69,55 @@ public class MapGenerator : MonoBehaviour {
 					int hirange = 	regPartir.width/2 + randomRange < (regPartir.x + regPartir.width) ? regPartir.width/2 + randomRange : regPartir.width;
 					partitionCoord = Random.Range(lowrange, hirange);					
 					Area izq = new Area(regPartir.x, regPartir.y, regPartir.height, partitionCoord, orientation.VERTICAL);
-					Area der = new Area(partitionCoord+regPartir.x+1, regPartir.y, regPartir.height, regPartir.width-partitionCoord-1,orientation.VERTICAL);
-					Area calle = new Area(partitionCoord+regPartir.x, regPartir.y, regPartir.height, 1,orientation.VERTICAL);
+					Area der = new Area(partitionCoord+regPartir.x, regPartir.y, regPartir.height, regPartir.width-partitionCoord,orientation.VERTICAL);
 					regiones.Enqueue(der);
 					regiones.Enqueue(izq);
-					calles.Enqueue(calle);
 				}
 				else{//Horizontal
 					Debug.Log("Padre Horizontal:"+regPartir.toString());
 					int lowrange = 	regPartir.height/2 - randomRange > 0 ? regPartir.height/2 - randomRange : 0;
 					int hirange = 	regPartir.height/2 + randomRange < height ? regPartir.height/2 + randomRange : height;
-										
 					partitionCoord = Random.Range(lowrange, hirange);
-					Debug.Log(lowrange+"-"+hirange+":"+partitionCoord);
-					
 					Area abj = new Area(regPartir.x, regPartir.y, partitionCoord, regPartir.width,orientation.HORIZONTAL);
-					Area arr = new Area(regPartir.x, partitionCoord+regPartir.y+1, (regPartir.height-partitionCoord-1), regPartir.width,orientation.HORIZONTAL);
-					Area calle = new Area(regPartir.x, partitionCoord+regPartir.y, 1, regPartir.width,orientation.HORIZONTAL);
-					Debug.Log("Hijo abajo:"+arr.toString());
-					Debug.Log("Hijo arriba:"+abj.toString());
-					
-					
+					Area arr = new Area(regPartir.x, partitionCoord+regPartir.y, (regPartir.height-partitionCoord), regPartir.width,orientation.HORIZONTAL);							
 					regiones.Enqueue(abj);
 					regiones.Enqueue(arr);
-					calles.Enqueue(calle);
 				}
 			}
 			direction++;
 		}
-		/**Pintado de calles */
-		while(calles.Count > 0){
-			Area road = calles.Dequeue();			
-			if(road.dir == orientation.VERTICAL){//Vertical
-				for(int i = road.y; i < (road.y+road.height); i++){
-					Instantiate(vroad,new Vector3(road.x * mapRate,i * mapRate,0),Quaternion.identity);
-				}
-			}
-			else{//Horizontal
-				for(int i = road.x; i < (road.x+road.width); i++){
-					Instantiate(hroad,new Vector3(i * mapRate,road.y * mapRate,0),Quaternion.identity);
-				}
-			}
-		}
 		/****/
 		while(regiones.Count > 0){
 			Area area = regiones.Dequeue();
+			PaintRegion(area);
 			Debug.Log(area.toString());
 		}
-
-		
 	}
 	
-	private Area instantiateBuildings(Area original){
-		Area restante = new Area(0,0,0,0,orientation.HORIZONTAL);
-
-		return restante;
+	private void PaintRegion(Area region){
+		Vector3Int brushPosition = new Vector3Int(region.x,region.y,0);
+		for(int i = region.x * mapRate; i <= (region.x + region.width) * mapRate; i++){
+			map.SetTile(new Vector3Int(i,region.y * mapRate,0),roadTile);			
+			map.SetTile(new Vector3Int(i,(region.y+region.height) * mapRate,0),roadTile);
+			// if(region.height > minAreaSize){
+			// 	map.SetTile(new Vector3Int(i,(region.y) * mapRate - 1,0),roadTile);			
+			// 	map.SetTile(new Vector3Int(i,(region.y+region.height) * mapRate - 1,0),roadTile);
+			// }
+		}
+		for(int i = region.y * mapRate; i <= (region.y + region.height) * mapRate; i++){
+			map.SetTile(new Vector3Int(region.x * mapRate,i,0),roadTile);
+			map.SetTile(new Vector3Int((region.x+region.width) * mapRate,i,0),roadTile);
+			// if(region.width > minAreaSize){
+			// 	map.SetTile(new Vector3Int(region.x * mapRate - 1,i,0),roadTile);
+			// 	map.SetTile(new Vector3Int((region.x+region.width) * mapRate -1,i,0),roadTile);
+			// }
+		}
 	}
 
-	private Area calculateRegion(int x, int y, int x1, int y1){
-		Area area = new Area();
-		area.x = x;
-		area.y = y;
-		area.height = Mathf.Abs(x - x1);
-		area.width = Mathf.Abs(y - y1);
-		return area;
+	private void PaintBuildings (Area region){
+
 	}
+
 
 
 
