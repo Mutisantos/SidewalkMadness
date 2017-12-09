@@ -32,6 +32,9 @@ public class MapGenerator : MonoBehaviour {
 	public Tilemap map;
 
 	public TileBase roadTile;
+	public TileBase sidewalkTile;
+
+	public BuildingTile[] buildingTiles;
 	public int height;
 	public int width;
 	public int mainStreetDepth;
