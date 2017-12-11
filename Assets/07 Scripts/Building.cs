@@ -10,14 +10,17 @@ public class Building : MonoBehaviour{
 	public int height;
 	public int width;
 
-	private List<Transform> waypoints = new List<Transform>();
+	public int enemyCounter;
 
-	void Start(){
-	//	setBuildingPosition();
-	}
+	private List<Transform> waypoints;
 
-	public void setBuildingPosition(){
-		transform.position = new Vector3(x,y,0);
+	public Building(int x,int y,int height,int width){
+		enemyCounter = 0;
+		this.x = x;
+		this.y = y;
+		this.height = height;
+		this.width = width;
+		waypoints = new List<Transform>();
 	}
 
 	public int getX(){
@@ -33,11 +36,8 @@ public class Building : MonoBehaviour{
 		return width;
 	}
 
-	public bool isVertical(){
-		if(height > width)
-			return true;
-		else
-			return false;
+	public void AddEnemies(){
+		
 	}
 
 

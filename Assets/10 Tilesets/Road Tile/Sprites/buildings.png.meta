@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c80586841225d54abaaf8914871b6de
-timeCreated: 1512780491
+timeCreated: 1512947437
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -64,6 +64,24 @@ TextureImporter:
     21300114: buildings_57
     21300116: buildings_58
     21300118: buildings_59
+    21300120: buildings_60
+    21300122: buildings_61
+    21300124: buildings_62
+    21300126: buildings_63
+    21300128: buildings_64
+    21300130: buildings_65
+    21300132: buildings_66
+    21300134: buildings_67
+    21300136: buildings_68
+    21300138: buildings_69
+    21300140: buildings_70
+    21300142: buildings_71
+    21300144: buildings_72
+    21300146: buildings_73
+    21300148: buildings_74
+    21300150: buildings_75
+    21300152: buildings_76
+    21300154: buildings_77
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -779,8 +797,8 @@ TextureImporter:
       name: buildings_44
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 32
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -793,8 +811,8 @@ TextureImporter:
       name: buildings_45
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 48
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -807,8 +825,8 @@ TextureImporter:
       name: buildings_46
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
+        x: 64
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -821,8 +839,8 @@ TextureImporter:
       name: buildings_47
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 0
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -835,8 +853,8 @@ TextureImporter:
       name: buildings_48
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
+        x: 16
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -849,8 +867,8 @@ TextureImporter:
       name: buildings_49
       rect:
         serializedVersion: 2
-        x: 48
-        y: 112
+        x: 32
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -863,6 +881,90 @@ TextureImporter:
       name: buildings_50
       rect:
         serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_53
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_55
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_56
+      rect:
+        serializedVersion: 2
         x: 0
         y: 96
         width: 16
@@ -874,7 +976,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_51
+      name: buildings_57
       rect:
         serializedVersion: 2
         x: 16
@@ -888,7 +990,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_52
+      name: buildings_58
       rect:
         serializedVersion: 2
         x: 32
@@ -902,7 +1004,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_53
+      name: buildings_59
       rect:
         serializedVersion: 2
         x: 48
@@ -916,7 +1018,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_54
+      name: buildings_60
       rect:
         serializedVersion: 2
         x: 0
@@ -930,7 +1032,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_55
+      name: buildings_61
       rect:
         serializedVersion: 2
         x: 16
@@ -944,7 +1046,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_56
+      name: buildings_62
       rect:
         serializedVersion: 2
         x: 32
@@ -958,7 +1060,49 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_57
+      name: buildings_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_66
       rect:
         serializedVersion: 2
         x: 0
@@ -972,7 +1116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_58
+      name: buildings_67
       rect:
         serializedVersion: 2
         x: 16
@@ -986,11 +1130,137 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: buildings_59
+      name: buildings_68
       rect:
         serializedVersion: 2
         x: 32
         y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_69
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_71
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_73
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_75
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: buildings_77
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
         width: 16
         height: 16
       alignment: 0
