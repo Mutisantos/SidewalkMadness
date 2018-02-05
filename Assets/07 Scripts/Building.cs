@@ -36,8 +36,14 @@ public class Building : MonoBehaviour{
 		return width;
 	}
 
+	public void setEnemyCount(int enemies){
+		enemyCounter = enemies;
+	}
+
 	public void AddEnemies(){
-		
+		if(enemyCounter > 0){
+			enemyCounter--;
+		}
 	}
 
 
