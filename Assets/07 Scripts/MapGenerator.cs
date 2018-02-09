@@ -64,6 +64,8 @@ public class MapGenerator : MonoBehaviour {
 	public bool finishedLoading;
 	public bool initHorizontal;
 	public int mapRate;
+	public int vehicleLimit;
+	public GameObject mapContainer;
 	private int direction; //Even:Horizontal; Odd:Vertical
 	private Dictionary<buildingTypeEnum,List<BuildingTile>> contentTiles;
 	//Los circuitos se guardan como areas para añadir vehiculos/peatones que se muevan por las calles
@@ -107,84 +109,96 @@ public class MapGenerator : MonoBehaviour {
 		}
 	}
 	
+	/**Metodo para crear enemigos vehiculares, dependiendo de la configuracion de las vias */
 	private void createRoadEnemies(){
-		while(roads.Count > 0){
-			Area road = roads.Dequeue();
-			List<Transform> waypoints = new List<Transform>();
-			GameObject location = new GameObject();
-			//Modos de circuito (rectangular, L, linear)
-			int mode = Random.Range(0,0);
-			switch(mode){
-				//Rectangular
-				case(0):location.transform.Translate(road.x,road.y,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x,road.y+road.height,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x+road.width,road.y+road.height,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x+road.width,road.y,0);
-						waypoints.Add(location.transform);
-						break;
-				//L inferior
-				case(1):location.transform.Translate(road.x,road.y,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x,road.y+road.height,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x,road.y,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x+road.width,road.y,0);
-						waypoints.Add(location.transform);
-						break;
-				//L Superior
-				case(2):location.transform.Translate(road.x+road.width,road.y+road.height,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x,road.y+road.height,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x+road.width,road.y+road.height,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x+road.width,road.y,0);
-						waypoints.Add(location.transform);
-						break;	
-				//Vertical
-				case(3):location.transform.Translate(road.x,road.y+road.height,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x,road.y,0);
-						waypoints.Add(location.transform);
-						break;	
-				//Horizontal
-				case(4):location.transform.Translate(road.x+road.width,road.y,0);
-						waypoints.Add(location.transform);
-						location = new GameObject();
-						location.transform.Translate(road.x,road.y,0);
-						waypoints.Add(location.transform);
-						break;	
+		float mapScale = mapContainer.transform.localScale.x;
+		int creationLimit = Random.Range(vehicleLimit/2,vehicleLimit);
+		int creationCount = 0;
+		while(roads.Count > 0 && creationCount < creationLimit){
+			float randval = Random.value;
+			if(randval < 0.5f){
+				creationCount++;
+				Area road = roads.Dequeue();
+				List<Transform> waypoints = new List<Transform>();
+				GameObject location = new GameObject();
+				float d = 1f;//Delta de posición para ubicar los waypoints al centro del Tile
+				//Modos de circuito (rectangular, L, linear)
+				int mode = Random.Range(0,4);
+				float x = road.x * mapScale + d;
+				float y = road.y * mapScale + d;
+				float h = road.height * mapScale + d;
+				float w = road.width * mapScale + d;
+				switch(mode){
+					//Rectangular
+					case(0):location.transform.Translate(x,y,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x,y+h,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x+w,y+h,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x+w,y,0);
+							waypoints.Add(location.transform);
+							break;
+					//L inferior
+					case(1):location.transform.Translate(x,y,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x,y+h,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x,y,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x+w,y,0);
+							waypoints.Add(location.transform);
+							break;
+					//L Superior
+					case(2):location.transform.Translate(x+w,y+h,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x,y+h,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x+w,y+h,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x+w,y,0);
+							waypoints.Add(location.transform);
+							break;	
+					//Vertical
+					case(3):location.transform.Translate(x,y+h,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x,y,0);
+							waypoints.Add(location.transform);
+							break;	
+					//Horizontal
+					case(4):location.transform.Translate(x+w,y,0);
+							waypoints.Add(location.transform);
+							location = new GameObject();
+							location.transform.Translate(x,y,0);
+							waypoints.Add(location.transform);
+							break;	
+				}
+				int startingPoint = Random.Range(0, waypoints.Count-1);
+				int chosenEnemy = Random.Range(0,roadEnemyPrefabs.Length);
+				GameObject goEnemy = Instantiate(roadEnemyPrefabs[chosenEnemy],waypoints[startingPoint].position,Quaternion.identity);
+				goEnemy.GetComponent<EnemyPatrolMove>().setWaypoints(waypoints);
+				goEnemy.GetComponent<EnemyPatrolMove>().setTargetPoint(startingPoint);
 			}
-			int startingPoint = Random.Range(0, waypoints.Count);
-			int chosenEnemy = Random.Range(0,roadEnemyPrefabs.Length);
-			GameObject goEnemy = Instantiate(roadEnemyPrefabs[chosenEnemy],waypoints[startingPoint].position,Quaternion.identity);
-			goEnemy.GetComponent<EnemyPatrolMove>().setWaypoints(waypoints);
-
 		}
 	}
 	private Queue<Area> generateRegions(int mainStreetDepth, Area originalArea, int direction, int minArea){
 		Queue<Area> regions = new Queue<Area>();
 		regions.Enqueue(originalArea);
+		roads.Enqueue(originalArea);
 		for(int i =0;i<mainStreetDepth;i++){
 			for(int j = 0; j < Mathf.Pow(2,i);j++){
 				Area regPartir = regions.Dequeue();
-				roads.Enqueue(regPartir);
 				int partitionCoord = 0;
-				Debug.Log(regPartir.toString());
 				if(regPartir.height >= minArea && regPartir.width >= minArea){
 					if(direction%2==0){//Vertical
 						int lowrange = 	regPartir.width/2 - randomRange >= 0 ? regPartir.width/2 - randomRange : 0;
@@ -194,6 +208,8 @@ public class MapGenerator : MonoBehaviour {
 						Area der = new Area(partitionCoord+regPartir.x, regPartir.y, regPartir.height, regPartir.width-partitionCoord,orientation.VERTICAL,direction);
 						regions.Enqueue(der);
 						regions.Enqueue(izq);
+						roads.Enqueue(der);
+						roads.Enqueue(izq);
 					}
 					else{//Horizontal
 						int lowrange = 	regPartir.height/2 - randomRange > 0 ? regPartir.height/2 - randomRange : 0;
@@ -203,6 +219,8 @@ public class MapGenerator : MonoBehaviour {
 						Area arr = new Area(regPartir.x, partitionCoord+regPartir.y, (regPartir.height-partitionCoord), regPartir.width,orientation.HORIZONTAL,direction);							
 						regions.Enqueue(abj);
 						regions.Enqueue(arr);
+						roads.Enqueue(abj);
+						roads.Enqueue(arr);
 					}
 				}
 				else{

@@ -196,7 +196,6 @@ public class EnemyPatrolMove : MonoBehaviour
 				counted = true;
 			}
 		}
-
 	}
 
 
@@ -213,11 +212,46 @@ public class EnemyPatrolMove : MonoBehaviour
 		}
 	}
 
+	/// <summary>
+	/// Sent when an incoming collider makes contact with this object's
+	/// collider (2D physics only).
+	/// </summary>
+	/// <param name="other">The Collision2D data associated with this collision.</param>
+	void OnCollisionEnter2D(Collision2D other)	{
+		if(other.otherCollider.tag == "EnemyBody" || other.otherCollider.tag == "VehicleEnemy"){
+			StartCoroutine (mutualEnemyDetection (Random.value > 0.5f? 1:0));		
+		}
+	}
+
 	public void setWaypoints (List<Transform> waypoints){
 		this.waypoints = waypoints;
 	}
 
+	public void setTargetPoint(int index){
+		this.targetPoint = index;
+	}
 
 
+	//Metodo que hace que el enemigo invierta el orden en el que sigue su recorrido
+	//Util para evitar posibles colisiones
+	private void invertWaypointOrder(){
+		this.targetPoint = waypoints.Count - this.targetPoint - 1;
+		this.waypoints.Reverse();
+	}
 
+	//Corrutina para que el enemigo decida que hacer si se encuentra con otro 
+	IEnumerator mutualEnemyDetection(int index){
+		float speed = this.step;		
+		switch(index){
+			case(0):this.step = 0;
+					yield return new WaitForSeconds (0.5f);
+					break;
+			case(1):invertWaypointOrder();
+					yield return new WaitForSeconds (0);
+					break;
+
+		}
+		this.step = speed;
+		yield return new WaitForSeconds (0);
+	}
 }
