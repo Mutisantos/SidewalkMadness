@@ -443,7 +443,7 @@ MonoBehaviour:
   finishedLoading: 0
   initHorizontal: 0
   mapRate: 1
-  vehicleLimit: 15
+  vehicleLimit: 10
   mapContainer: {fileID: 1917933094}
 --- !u!4 &253169395
 Transform:
@@ -910,8 +910,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1237438093
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_MaxChunkCount: 16

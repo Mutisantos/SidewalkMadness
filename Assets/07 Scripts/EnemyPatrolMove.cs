@@ -45,6 +45,8 @@ public class EnemyPatrolMove : MonoBehaviour
 
 	private bool counted = false;
 
+	private int collided = 0;
+
 
 
 	// Use this for initialization
@@ -164,7 +166,6 @@ public class EnemyPatrolMove : MonoBehaviour
 	}
 
 
-
 	//Solo alertar al jugador recien el enemigo puede verme
 	void OnTriggerEnter2D (Collider2D coll)
 	{
@@ -174,6 +175,10 @@ public class EnemyPatrolMove : MonoBehaviour
 			step = pursuitMultiplier * speed;
 			Rigidbody2D player = coll.attachedRigidbody;
 			nextPosition = player.position;
+		}
+		else if (coll.tag == "VehicleEnemy"){
+			if(collided == 0)
+				StartCoroutine (mutualEnemyDetection (Random.Range(0,2)));		
 		}
 	}
 
@@ -210,19 +215,28 @@ public class EnemyPatrolMove : MonoBehaviour
 				counted = true;
 			}
 		}
-	}
-
-	/// <summary>
-	/// Sent when an incoming collider makes contact with this object's
-	/// collider (2D physics only).
-	/// </summary>
-	/// <param name="other">The Collision2D data associated with this collision.</param>
-	void OnCollisionEnter2D(Collision2D other)	{
-		if(other.otherCollider.tag == "EnemyBody" || other.otherCollider.tag == "VehicleEnemy"){
-			StartCoroutine (mutualEnemyDetection (Random.value > 0.5f? 1:0));		
+		if(collided==0){
+			step = speed;
 		}
 	}
 
+	
+	void OnCollisionEnter2D(Collision2D other)	{
+		Debug.Log(other.otherCollider.tag);
+		if(other.otherCollider.tag == "VehicleEnemy"){
+			Debug.Log("CHOQUE");
+			collided++;
+			StartCoroutine (mutualEnemyDetection (1));	
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D other)
+	{
+		if(other.otherCollider.tag == "VehicleEnemy"){
+			this.step = speed;
+			collided--;
+		}
+	}
 	public void setWaypoints (List<Transform> waypoints){
 		this.waypoints = waypoints;
 	}
@@ -233,25 +247,44 @@ public class EnemyPatrolMove : MonoBehaviour
 
 
 	//Metodo que hace que el enemigo invierta el orden en el que sigue su recorrido
-	//Util para evitar posibles colisiones
-	private void invertWaypointOrder(){
-		this.targetPoint = waypoints.Count - this.targetPoint - 1;
+	void invertWaypointOrder(){
+		int newTarget = waypoints.Count - 1 - this.targetPoint;
+		if(newTarget < 0)
+			newTarget = 0;
+		else if (newTarget > waypoints.Count -1)
+			newTarget = waypoints.Count -1;
+		this.targetPoint = newTarget;
 		this.waypoints.Reverse();
 	}
 
+	void returnToPreviousWaypoint(){
+		if(0 == this.targetPoint){
+			this.targetPoint = waypoints.Count - 1;
+		}
+		else{
+			this.targetPoint -= 1;
+		}
+	}
+	
 	//Corrutina para que el enemigo decida que hacer si se encuentra con otro 
 	IEnumerator mutualEnemyDetection(int index){
-		float speed = this.step;		
+				
 		switch(index){
-			case(0):this.step = 0;
-					yield return new WaitForSeconds (0.5f);
+			//Acelerar
+			case(0):this.step = step*1.5f;
+					yield return new WaitForSeconds (Random.Range(1,3));
+					//returnToPreviousWaypoint();
 					break;
-			case(1):invertWaypointOrder();
-					yield return new WaitForSeconds (0);
+			//Invertir
+			case(1):this.step = step*0.5f;
+					invertWaypointOrder();
+					yield return new WaitForSeconds (Random.value);
 					break;
-
+			//Desacelerar
+			case(2):this.step = step*0.5f;
+					yield return new WaitForSeconds (Random.value);
+					break;
 		}
-		this.step = speed;
 		yield return new WaitForSeconds (0);
 	}
 }

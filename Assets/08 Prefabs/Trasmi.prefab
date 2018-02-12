@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4693831012916374}
   - component: {fileID: 70402287719646966}
+  - component: {fileID: 58890759777280496}
   m_Layer: 0
   m_Name: Fisico
-  m_TagString: Untagged
+  m_TagString: VehicleEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748147601163982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4705275871968864}
@@ -124,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1985128118267630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.099998, y: 121.40001, z: 0}
+  m_LocalPosition: {x: -10.2847805, y: 10.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4693831012916374}
@@ -153,6 +154,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &58890759777280496
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1748147601163982}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.82}
+  serializedVersion: 2
+  m_Radius: 1.3
 --- !u!61 &61436364745068568
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -215,8 +231,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2, y: 4.5}
+  m_Offset: {x: 0, y: 0.23279381}
+  m_Size: {x: 2, y: 3.6619377}
   m_Direction: 0
 --- !u!95 &95382050655151790
 Animator:
