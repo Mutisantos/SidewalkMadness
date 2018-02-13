@@ -435,6 +435,8 @@ MonoBehaviour:
   - {fileID: 1957736581792178, guid: 6acc76c69a497fb4f876cbea32a79b7b, type: 2}
   - {fileID: 1599681351180656, guid: 6f1234213b1de4c46a9248966f8265c2, type: 2}
   - {fileID: 1256025879515108, guid: 23ddbad8c01981746a435dbd59d37566, type: 2}
+  checkPointPrefab: {fileID: 1086137934369214, guid: 63e53f545d1cd644da80e95d82f2491c,
+    type: 2}
   height: 25
   width: 25
   mainStreetDepth: 4
@@ -443,7 +445,7 @@ MonoBehaviour:
   finishedLoading: 0
   initHorizontal: 0
   mapRate: 1
-  vehicleLimit: 10
+  vehicleLimit: 20
   mapContainer: {fileID: 1917933094}
 --- !u!4 &253169395
 Transform:

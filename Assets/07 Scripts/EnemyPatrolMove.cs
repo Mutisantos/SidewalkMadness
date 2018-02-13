@@ -177,8 +177,7 @@ public class EnemyPatrolMove : MonoBehaviour
 			nextPosition = player.position;
 		}
 		else if (coll.tag == "VehicleEnemy"){
-			if(collided == 0)
-				StartCoroutine (mutualEnemyDetection (Random.Range(0,2)));		
+			StartCoroutine (mutualEnemyDetection (Random.Range(0,1)));		
 		}
 	}
 
@@ -224,9 +223,7 @@ public class EnemyPatrolMove : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D other)	{
 		Debug.Log(other.otherCollider.tag);
 		if(other.otherCollider.tag == "VehicleEnemy"){
-			Debug.Log("CHOQUE");
-			collided++;
-			StartCoroutine (mutualEnemyDetection (1));	
+			StartCoroutine (mutualEnemyDetection (2));	
 		}
 	}
 
@@ -234,7 +231,6 @@ public class EnemyPatrolMove : MonoBehaviour
 	{
 		if(other.otherCollider.tag == "VehicleEnemy"){
 			this.step = speed;
-			collided--;
 		}
 	}
 	public void setWaypoints (List<Transform> waypoints){
@@ -268,20 +264,20 @@ public class EnemyPatrolMove : MonoBehaviour
 	
 	//Corrutina para que el enemigo decida que hacer si se encuentra con otro 
 	IEnumerator mutualEnemyDetection(int index){
-				
+		//Acelerar o desacelerar reduce la probabilidad que tengan colisiones "perfectas".
+		//Invertir el orden de la rutina funciona como ultimo recurso para colisiones.		
 		switch(index){
 			//Acelerar
-			case(0):this.step = step*1.5f;
+			case(0):this.step = step*1.1f;
 					yield return new WaitForSeconds (Random.Range(1,3));
 					//returnToPreviousWaypoint();
 					break;
-			//Invertir
-			case(1):this.step = step*0.5f;
-					invertWaypointOrder();
+			//Desacelerar
+			case(1):this.step = step*0.9f;
 					yield return new WaitForSeconds (Random.value);
 					break;
-			//Desacelerar
-			case(2):this.step = step*0.5f;
+			//Invertir
+			case(2):invertWaypointOrder();
 					yield return new WaitForSeconds (Random.value);
 					break;
 		}

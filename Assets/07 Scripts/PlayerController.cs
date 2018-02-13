@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour {
 				StartCoroutine (respawnPlayer ());
 			}
 		}
-
+		//El Jugador Gana al encontrarse con el Goal
 		if (coll.tag == "Goal") {
 			GameManager.instance.setAlive(true);
 			GameManager.instance.setEnded(true);

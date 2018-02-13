@@ -55,6 +55,9 @@ public class MapGenerator : MonoBehaviour {
 	public BuildingTile[] buildingTiles;
 	public GameObject[] sidewalkEnemyPrefabs;
 	public GameObject[] roadEnemyPrefabs;
+
+	public GameObject checkPointPrefab;
+	public GameObject goalPrefab;
 	
 	public int height;
 	public int width;
@@ -86,6 +89,8 @@ public class MapGenerator : MonoBehaviour {
 		roadMaps.ClearAllTiles();
 		buildingMap.ClearAllTiles();
 		propsMap.ClearAllTiles();
+		bool beginSet = false;
+		bool endingSet = false;
 
 		Queue<Area> regiones = new Queue<Area>();		
 		///-- Split the whole roadMaps in regions - generate roads
